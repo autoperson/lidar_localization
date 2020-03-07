@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/rq/project/project_github/devel/include",
+        "/home/rq/project/project_series/devel/include",
+        "/home/rq/project/project_localization/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/rq/project/project_github/src/lidar_localization/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}

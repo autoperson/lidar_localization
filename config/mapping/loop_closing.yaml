@@ -1,0 +1,24 @@
+data_path: ./ 
+
+registration_method: NDT   # pointcloud registration method
+extend_frame_num: 5 # key frame of local map is 2*extend_frame_num + 1
+loop_step: 5 # detect loop close every "loop_step" key frame
+detect_area: 10.0 # loop close is detect in this area near current key frame
+diff_num: 100 # the key frame index of the two key frame in a loop constraint must larger than diff_num
+fitness_score_limit: 0.2 # the fitness of every loop registration must lower than this
+
+map_filter: voxel_filter # you can chose：voxel_filter、no_filter
+scan_filter: voxel_filter # you can chose：voxel_filter、no_filter
+
+## param of NDT
+NDT:
+    res : 1.0
+    step_size : 0.1
+    trans_eps : 0.01
+    max_iter : 30
+## filter param
+voxel_filter:
+    map:
+        leaf_size: [0.3, 0.3, 0.3]
+    scan:
+        leaf_size: [0.3, 0.3, 0.3]
